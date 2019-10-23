@@ -2,12 +2,12 @@ import java.util.Scanner; // Scanner Import zum einlesen von der Konsole
 public class P1 {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in); // Scanner anlegen
-        final int  eingabe = in.nextInt();//Einlesen beim nächsten Integer wert
-        System.out.println(eingabe);
-        aufgabe1(eingabe);
-      //aufgabe2();
-      //aufgabe3();
+        //Scanner in = new Scanner(System.in); // Scanner anlegen
+       // final int  eingabe = in.nextInt();//Einlesen beim nächsten Integer wert
+        //System.out.println(eingabe);
+        //aufgabe1(eingabe);
+        aufgabe2();
+        //aufgabe3();
     }
 
     private static void aufgabe1(int tiefe) {
@@ -53,9 +53,36 @@ public class P1 {
 
     }
     private static void aufgabe2() {
+        KreisVererb kreis = new KreisVererb(10,10,5); //Einen neuen Kreis erstellen...
+        KreisVererb kreissec = new KreisVererb(12,12,8); // Einen 2. Kreis erstellen...
+
+
+
+        //Testfall für Equals
+        if(kreis.equals(kreissec)){
+            System.out.println("Kreis ist ==  Kreissec");
+        }else {
+            System.out.println("Kreis != Kreissec");
+        }
+
+
+        //Ausgaben Tests
+        System.out.println(kreis.toStrings());
+        System.out.println(kreissec.toStrings());
+
+        kreis.setRadius(100);
+        kreis.setLocation(1337,1337);
+        System.out.println( "Radius auf 100 und Loc 1337 "+kreis.toStrings());
+
+
+
+
+
+
 
     }
     private static void aufgabe3() {
+
 
     }
 
