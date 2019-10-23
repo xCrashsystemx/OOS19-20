@@ -34,10 +34,19 @@ public class P1 {
                     //Wenn 0 dann berechne die Inneren werte..
                     dreieck[i][j] = dreieck[i-1][j-1] + dreieck[i-1][j];
                 }
-
-
-
             }
+        }
+
+        //Print...
+        k=0;// reset k
+        for(int i = 0; i < tiefe;i++){
+            if( i != 0) {
+                k = i;
+            }
+            for(int j = 0; j <= k ; j++){
+                System.out.print(dreieck[i][j] + " ");
+            }
+            System.out.println();
         }
 
 
