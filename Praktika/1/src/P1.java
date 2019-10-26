@@ -3,11 +3,11 @@ public class P1 {
 
     public static void main(String[] args) {
         //Scanner in = new Scanner(System.in); // Scanner anlegen
-       // final int  eingabe = in.nextInt();//Einlesen beim nächsten Integer wert
+        // final int  eingabe = in.nextInt();//Einlesen beim nächsten Integer wert
         //System.out.println(eingabe);
         //aufgabe1(eingabe);
-        aufgabe2();
-        //aufgabe3();
+        //aufgabe2();
+        aufgabe3();
     }
 
     private static void aufgabe1(int tiefe) {
@@ -73,16 +73,20 @@ public class P1 {
         kreis.setRadius(100);
         kreis.setLocation(1337,1337);
         System.out.println( "Radius auf 100 und Loc 1337 "+kreis.toStrings());
-
-
-
-
-
-
-
     }
     private static void aufgabe3() {
+        KreisAgg kreis1 = new KreisAgg(10,10,5);
+        KreisAgg kreis2 = new KreisAgg(12,11,7);
 
+        Rechteck recht1 = new Rechteck(1,3,4,1);
+        Rechteck recht2 = new Rechteck(2,4,5,2);
+
+        Figuren[] arr = {kreis1,kreis2,recht1,recht2};
+        double result = 0.0;
+        for(int i = 0; i < arr.length;i++){
+            result += arr[i].flächenInhalt();
+        }
+        System.out.println(Math.round(result));
 
     }
 
