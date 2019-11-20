@@ -65,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="JUnit.All in P2 (1)">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="P2" />
@@ -73,15 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in P2 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in P2 (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in P2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -113,13 +105,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BenutzerVerwaltungAdminTest.dbinitialisieren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.BenutzerVerwaltungAdminTest" />
+      <option name="METHOD_NAME" value="dbinitialisieren" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in P2 (1)" />
+        <item itemvalue="JUnit.BenutzerVerwaltungAdminTest.dbinitialisieren" />
         <item itemvalue="Application.main" />
         <item itemvalue="JUnit.All in P2" />
         <item itemvalue="JUnit.BenutzerVerwaltungAdminTest.benutzerEintragen" />
-        <item itemvalue="JUnit.All in P2 (3)" />
-        <item itemvalue="JUnit.All in P2 (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -140,23 +148,12 @@
       <workItem from="1573849098026" duration="31000" />
       <workItem from="1573854400598" duration="7000" />
       <workItem from="1574259506577" duration="11205000" />
-      <workItem from="1574272802930" duration="1081000" />
+      <workItem from="1574272802930" duration="3190000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/BenutzerVerwaltungAdminTest.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/P2$All_in_P2__1_.ic" NAME="All in P2 (1) Coverage Results" MODIFIED="1574265707934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

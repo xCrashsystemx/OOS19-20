@@ -102,12 +102,12 @@ public class BenutzerVerwaltungAdmin
     public void write(){
 
         try {
-            FileOutputStream fs = new FileOutputStream("Users");
+            FileOutputStream fs = new FileOutputStream("Users.dat");
             ObjectOutputStream oos = new ObjectOutputStream(fs);
 
             oos.writeObject(userList);
-            fs.close();
             oos.close();
+            fs.close();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -121,12 +121,12 @@ public class BenutzerVerwaltungAdmin
      */
     public void read(){
         try {
-            FileInputStream fs = new FileInputStream("Users");
+            FileInputStream fs = new FileInputStream("Users.dat");
             ObjectInputStream ois = new ObjectInputStream(fs);
 
             this.setUserList((ArrayList<Benutzer>)ois.readObject());
-            fs.close();
             ois.close();
+            fs.close();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }

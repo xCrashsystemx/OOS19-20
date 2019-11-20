@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 /**
  * <p>Überschrift: Klasse zum Testen der Methoden von BenutzerVerwaltungAdmin. </p>
@@ -109,6 +111,32 @@ class BenutzerVerwaltungAdminTest {
         assertTrue(admin.benutzerOk(user3));
         admin.benutzerLöschen(user3);
         assertFalse(admin.benutzerOk(user3));
+
+    }
+    @Test
+    void dbinitialisieren(){
+        admin.dbInitialisieren();
+        admin.read();
+        assertEquals(admin.getUserList().size(),0);
+    }
+    @Test
+    void write(){//test write and read..
+        try {
+            admin.benutzerEintragen(user1);
+            ArrayList<Benutzer> test = new ArrayList<Benutzer>();
+            test.add(0,user1);
+            admin.write();
+
+            assertEquals(admin.getUserList(), test);
+            admin.getUserList().clear();
+            admin.read();
+            assertEquals(admin.getUserList(),test);
+
+
+
+        } catch (BenutzerVerwaltungException e) {
+            e.printStackTrace();
+        }
 
     }
 }
